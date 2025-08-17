@@ -6,7 +6,7 @@ metadata:
   labels:
     app: "backend"
 spec:
-  replicas: 5 #(origina+copy)
+  replicas: 10 #(origina+copy)
   selector:
     matchLabels:
       app: "backend"
@@ -26,3 +26,4 @@ spec:
               memory: "128Mi"
 
               cpu: "500m"
+
