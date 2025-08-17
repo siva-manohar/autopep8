@@ -20,5 +20,6 @@ pipeline {
                 kubectl apply -f service-dileep.yaml
                 '''
             }
+        }
     }
 }
