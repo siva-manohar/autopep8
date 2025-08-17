@@ -16,8 +16,8 @@ pipeline {
             steps{
                 sh '''
                 sed "s/tag/${BUILD_NUMBER}/g" deployment-mahesh.yaml > deployment-mahesh-new.yaml
-                kubectl apply -f deployment-mahesh-new.yaml
-                kubectl apply -f service-dileep.yaml
+                /var/lib/jenkins/kubectl apply -f deployment-mahesh-new.yaml
+                /var/lib/jenkins/kubectl apply -f service-dileep.yaml
                 '''
             }
         }
